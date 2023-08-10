@@ -1,0 +1,95 @@
+<div class="login-header">
+  <div >
+    <h5><b>Employee Manager</b></h5>
+  </div>
+  <div class="login-wrapper">
+    <h6 style="margin-right: 10px;" class="loginText" routerLink="/login">Login</h6>
+    <h6 class="registerText" routerLink="/register">Register</h6>
+  </div>
+</div>
+<hr>
+
+<div class="login-signup-box">
+  <div class="login-container">
+    <div class="header-wrap">
+      <div class="main-header">Login</div>
+    </div>
+    <div>
+      <div>
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+          <div
+            class="qw-form-group mb-4"
+            [class.qw-input-validation]="
+              loginForm.controls.email.invalid &&
+              !loginForm.controls.email.untouched
+            "
+          >
+            <label class="qw-form-label">Email Address</label >
+            <input
+              class="form-control qw-form-control-prepend"
+              formControlName="email"
+              required
+            />
+            <small
+              *ngIf="
+                loginForm.controls.email.touched &&
+                loginForm.controls.email.errors?.required
+              "
+              class="validation-text"
+              translate
+            >
+              Enter a valid Email Address.
+            </small>
+          </div>
+
+          <div
+            class="qw-form-group"
+            [class.qw-input-validation]="
+              loginForm.controls.password.invalid &&
+              !loginForm.controls.password.untouched
+            "
+          >
+            <label for="customerName" class="qw-form-label">Password</label>
+            <input
+              name="password"
+              class="form-control qw-form-control-prepend-last"
+              type="password"
+              formControlName="password"
+              required
+            />
+            <small
+              *ngIf="
+                loginForm.controls.password.invalid &&
+                !loginForm.controls.password.untouched
+              "
+              class="validation-text"
+              translate
+            >
+              Enter a valid password
+            </small>
+          </div>
+          <div class="forgot-password text-right mr-5">
+            <a>
+              Forgot Password ?
+            </a>
+          </div>
+          <div class="lg-button-wrapper mt-4">
+            <button class="btn qw-button-wd qw-btn-primary" type="submit" [disabled]="loginForm.invalid ">
+              <span translate>Login</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ngx-spinner
+  bdColor="rgba(0, 0, 0, 0.3)"
+  size="default"
+  color="#ee4a26"
+  type="square-jelly-box"
+  [fullScreen]="true"
+>
+  <p style="color: white">Loading...</p>
+</ngx-spinner>

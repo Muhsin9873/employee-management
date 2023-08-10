@@ -1,0 +1,45 @@
+@import "src/assets/scss/main";
+
+.cursor {
+  cursor: pointer;
+}
+
+.modal-header {
+  padding-bottom: 0.2rem;
+  border-bottom: none !important;
+}
+.modal-footer {
+  border-top: none !important;
+  padding: 0.7rem;
+  padding-top: 0;
+}
+.close {
+  font-size: 25px;
+  border: none;
+  background: none;
+  color: #909399;
+}
+.cancel-btn {
+  height: 36px;
+  border: 1px solid #dcdfe6;
+  margin-right: 10px;
+}
+.cancel-btn:hover {
+  background-color: rgba(117, 138, 244, 0.266);
+  border: 1px solid rgba(117, 138, 244, 0.266);
+  color: rgba(28, 64, 242, 0.733);
+}
+
+.input-wrapper {
+  border-bottom: 1.2px solid #babcbe;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.input-style {
+    width: 100%;
+    font-size: 13px;
+    outline: none;
+    padding: 5px;
+    padding-right: 2.4rem;
+}

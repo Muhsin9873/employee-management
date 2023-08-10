@@ -1,0 +1,53 @@
+@import "src/assets/scss/main";
+
+.popup-body-wrapper {
+  padding: 20px 15px;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+  
+    .main-header {
+      font-size: 18px;
+      font-weight: 300;
+    }
+}
+
+.close-btn {
+    border: none;
+    font-size: 25px;
+    background: none;
+    color: #909399;
+ }
+
+.detail-wrapper {
+    padding: 15px 16px;
+}
+
+.select-design-wrap {
+    .select-class {
+      width: 100%;
+      outline: none;
+      background: #ededed;
+      border: none;
+      padding: 12px;
+      font-size: 14px;
+      color: #606266 !important;
+    }
+}
+
+.cancel-btn {
+  height: 36px;
+  border: 1px solid #dcdfe6;
+  margin-right: 10px;
+}
+.cancel-btn:hover {
+  background-color: rgba(117, 138, 244, 0.266);
+  border: 1px solid rgba(117, 138, 244, 0.266);
+  color: rgba(28, 64, 242, 0.733);
+}
+
+.error-text {
+  color: red;
+}

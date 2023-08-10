@@ -1,0 +1,56 @@
+<div class="popup-body-wrapper">
+  <form [formGroup]="editDesignationForm">
+    <div class="header-wrap">
+      <div class="main-header">Edit Designation</div>
+      <button type="button" class="close close-btn" (click)="close()">
+        <span>&times;</span>
+      </button>
+    </div>
+    <hr />
+    <div class="detail-wrapper">
+      <div class="head-text">Designation Name</div>
+      <div class="select-design-wrap">
+        <input
+          type="text"
+          formControlName="designationName"
+          class="select-class mt-2"
+          placeholder="Enter Designation Name"
+        />
+      </div>
+      <small
+        *ngIf="
+          editDesignationForm.controls.designationName.touched &&
+          editDesignationForm.controls.designationName.errors
+        "
+        class="error-text"
+        translate
+      >
+        *Designation name is required.
+      </small>
+    </div>
+    <div class="modal-footer">
+      <div class="text-right footer-buttons">
+        <button type="button" class="btn cancel-btn" (click)="close()">
+          cancel
+        </button>
+        <button
+          (click)="editDesignation()"
+          type="button"
+          class="btn qw-button-sm qw-btn-primary confirm-btn"
+          [disabled]="!editDesignationForm.valid"
+        >
+          Update
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+<ngx-spinner
+  bdColor="rgba(0, 0, 0, 0.3)"
+  size="default"
+  color="#ee4a26"
+  type="square-jelly-box"
+  [fullScreen]="true"
+>
+  <p style="color: white">Loading...</p>
+</ngx-spinner>

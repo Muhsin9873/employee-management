@@ -1,0 +1,66 @@
+/*
+ * Entry point of global application style.
+ * Component-specific style should not go here and be included directly as part of the components.
+ */
+
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+@import url("../node_modules/primeicons/primeicons.css");
+@import url("../node_modules/primeng/resources/themes/saga-orange/theme.css");
+@import url("../node_modules/primeng/resources/primeng.min.css");
+
+/*Font Family Styles*/
+@font-face {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../src/assets/Gilroy Extra Bold/Gilroy-Light.otf")
+    format("truetype");
+}
+
+/*Font Family*/
+body {
+  font-family: "Gilroy", sans-serif;
+}
+
+.p-datatable table {
+  border-collapse: separate !important;
+  border-spacing: 0 0.5em !important;
+}
+.p-datatable .p-datatable-thead > tr > th {
+  background-color: white !important;
+}
+td {
+  background: #f7f7f7;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+tr td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+tr td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background: #452b4e !important;
+  border-color: none !important;
+  color: #fff !important;
+}

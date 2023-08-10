@@ -1,0 +1,234 @@
+//--------- Font family -----------//
+
+//---------- BASE TYPO ------------//
+
+body {
+    //font-family:"Helvetica", Arial, sans-serif;
+    font-family: "Barlow", Helvetica, Arial, sans-serif !important;
+    font-size: 12px;
+  }
+  //---------- HEADINGS ------------//
+  
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2.57em;
+  }
+  h3 {
+    font-size: 1.71em;
+  }
+  h4 {
+    font-size: 1.28em;
+  }
+  h5 {
+    font-size: 1.14em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+  
+  //---------- PARAGRAPH ------------//
+  
+  p {
+    font-size: 1em;
+  }
+  
+  //----------------------------- TITLE -----------------------------//
+  
+  %typo-title {
+    font-size: 1em;
+    font-weight: 300;
+  }
+  
+  .title {
+    &.default {
+      @extend %typo-big-bold;
+    }
+    &.inner {
+      @extend %typo-default-bold;
+      margin: 1em 0;
+    }
+    &.with-buttons {
+      @extend %align-space-between;
+      .btn {
+        position: relative;
+        top: -20px;
+      }
+    }
+  }
+  //----------------------------- ICONS -----------------------------//
+  
+  [class^="icon-"] {
+    @extend %typo-large-normal;
+  }
+  
+  //----------------------------- DEFAULT -----------------------------//
+  
+  %typo-default-normal {
+    font-size: 1em;
+    font-weight: 400;
+  }
+  %typo-default-medium {
+    font-size: 1em;
+    font-weight: 500;
+  }
+  %typo-default-semibold {
+    font-size: 1em;
+    font-weight: 600;
+  }
+  %typo-default-bold {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  %typo-default-light {
+    font-size: 1em;
+    font-weight: 300;
+  }
+  
+  //----------------------------- TINY -----------------------------//
+  
+  %typo-tiny-normal {
+    font-size: 1em;
+    font-weight: 400;
+  }
+  %typo-tiny-medium {
+    font-size: 1em;
+    font-weight: 500;
+  }
+  %typo-tiny-semibold {
+    font-size: 1em;
+    font-weight: 600;
+  }
+  %typo-small-normal {
+    font-size: 1em;
+    font-weight: 400;
+  }
+  
+  //----------------------------- SMALL -----------------------------//
+  
+  %typo-small-medium {
+    font-size: 1em;
+    font-weight: 500;
+  }
+  %typo-small-semibold {
+    font-size: 1em;
+    font-weight: 600;
+  }
+  %typo-small-bold {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  //----------------------------- BIG -----------------------------//
+  
+  %typo-big-normal {
+    font-size: 1.28em;
+    font-weight: 400;
+  }
+  %typo-big-medium {
+    font-size: 1.28em;
+    font-weight: 500;
+  }
+  %typo-big-semibold {
+    font-size: 1.28em;
+    font-weight: 600;
+  }
+  %typo-big-bold {
+    font-size: 1.28em;
+    font-weight: 700;
+  }
+  %typo-big-light {
+    font-size: 1.28em;
+    font-weight: 300;
+  }
+  
+  //----------------------------- LARGE -----------------------------//
+  
+  %typo-large-normal {
+    font-size: 1.71em;
+    font-weight: 400;
+  }
+  %typo-large-medium {
+    font-size: 1.71em;
+    font-weight: 500;
+  }
+  %typo-large-semibold {
+    font-size: 1.71em;
+    font-weight: 600;
+  }
+  %typo-large-bold {
+    font-size: 1.71em;
+    font-weight: 700;
+  }
+  %typo-large-light {
+    font-size: 1.71em;
+    font-weight: 300;
+  }
+  
+  //----------------------------- EXTRA LARGE -----------------------------//
+  
+  %typo-xlarge-normal {
+    font-size: 2.57em;
+    font-weight: 400;
+  }
+  %typo-xlarge-medium {
+    font-size: 2.57em;
+    font-weight: 500;
+  }
+  %typo-xlarge-semibold {
+    font-size: 2.57em;
+    font-weight: 600;
+  }
+  %typo-xlarge-bold {
+    font-size: 2.57em;
+    font-weight: 700;
+  }
+  %typo-xlarge-light {
+    font-size: 2.57em;
+    font-weight: 300;
+  }
+  
+  //----------------------------- HUGE -----------------------------//
+  
+  %typo-huge-normal {
+    font-size: 3em;
+    font-weight: 400;
+  }
+  %typo-huge-medium {
+    font-size: 3em;
+    font-weight: 500;
+  }
+  %typo-huge-semibold {
+    font-size: 3em;
+    font-weight: 600;
+  }
+  %typo-huge-bold {
+    font-size: 3em;
+    font-weight: 700;
+  }
+  %typo-huge-light {
+    font-size: 3em;
+    font-weight: 300;
+  }
+  
+  /*----  MEDIA QUERY 1200px ---- */
+  
+  @media only screen and (max-width: 1200px) {
+  }
+  
+  /*----  MEDIA QUERY 990px ---- */
+  
+  @media only screen and (max-width: 990px) {
+  }
+  
+  /*----  MEDIA QUERY 768px ---- */
+  
+  @media only screen and (max-width: 768px) {
+  }
+  
+  /*----  MEDIA QUERY 576px ---- */
+  
+  @media only screen and (max-width: 576px) {
+  }
+  

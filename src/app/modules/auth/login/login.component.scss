@@ -1,0 +1,58 @@
+@import "src/assets/scss/main";
+
+ 
+.login-header{
+  display: flex;
+  padding: 14px;
+  justify-content: space-around;
+}
+
+.login-wrapper{
+  display: flex ;
+}
+
+.login-box-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.login-box{
+  width: 40%;
+  border: 1px solid rgb(191, 185, 185);
+  border-radius: 5px;
+}
+
+.login-head{
+  padding: 10px;
+  background-color:#f2ececb7;
+  border-bottom: 1px solid rgb(191, 185, 185);
+}
+
+.form-wrapper{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.login-signup-box {
+  width: 200%;
+  right: 40%;
+  position: fixed;
+  max-width: 400px;
+  padding: 30px 50px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background: white;
+}
+
+.registerText{
+  cursor: pointer;
+}
+
+.loginText{
+  cursor: pointer;
+}
