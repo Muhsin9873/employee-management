@@ -1,0 +1,170 @@
+.qw-form-group {
+  position: relative;
+  margin-bottom: 15px;
+  .form-control:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.qw-form-label {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: $labelColor;
+}
+
+.qw-form-control,
+.qw-form-control-prepend,
+.qw-form-control-prepend-last {
+  border: none;
+  padding-left: 0;
+  font-size: 16px;
+  border-radius: 0;
+  color: black;
+  position: relative;
+  background: white;
+  caret-color: $primaryColor;
+  border-bottom: 1px solid $inputborderColor;
+}
+
+.qw-form-control-prepend-last {
+  padding-right: 30px;
+}
+
+.qw-form-group:focus-within {
+  padding: 10px 20px;
+  background: white;
+  border-radius: 9px;
+  box-shadow: 0px 12px 48px rgba(0, 0, 0, 0.13) !important;
+}
+
+.qw-form-group:focus-within > .qw-form-control {
+  font-size: 17px;
+  border-bottom: none;
+}
+
+.qw-form-group:focus-within > .qw-form-control-prepend {
+  font-size: 18px;
+  border-bottom: none;
+}
+
+.qw-form-group:focus-within > .qw-form-label {
+  font-size: 12px;
+}
+
+.qw-form-group:focus-within > .qw-input-prepend {
+  bottom: 20px;
+}
+
+.qw-form-group:focus-within > .qw-input-prepend-last {
+  right: 14px;
+  bottom: 20px;
+}
+
+.qw-form-group:focus-within > .qw-form-control-prepend-last {
+  font-size: 18px;
+  border-bottom: none;
+}
+
+.qw-input-prepend,
+.qw-input-prepend-last {
+  bottom: 10px;
+  position: absolute;
+  img {
+    width: 25px;
+    cursor: pointer;
+  }
+}
+
+.qw-input-prepend-last {
+  right: 0;
+}
+
+.qw-input-validation {
+  border-bottom: 1px solid $validationError;
+}
+
+.validation-text {
+  left: 0;
+  font-size: 12px;
+  position: absolute;
+  color: $validationError;
+}
+
+.qw-input-validation:focus-within {
+  border: 1px solid $validationError !important;
+}
+
+.qw-input-validation:focus-within > .validation-text {
+  left: 8px;
+  bottom: -20px;
+}
+
+//---------- End - Form - Style ------------//
+
+//---------- Common - Form - Style ------------//
+.main-page-wrapper {
+  background: #e8e4e4;
+}
+
+/* Subhed Styling*/
+.subhead-wrap {
+  display: flex;
+  margin-top: 22px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.table-detail-wrapp {
+  min-height: 100%;
+  // display: flex;
+  padding: 4px 12px;
+  background: #fff;
+  border-radius: 6px;
+  max-height: 100%;
+  // justify-content: center;
+}
+.empty-data-wrapp{
+  display: flex;
+  min-height: 600px;
+  justify-content: center; 
+  color: grey;
+  align-items: center
+}
+
+.page-list-head {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 17px;
+  margin: 15px 5px;
+}
+
+.main-page-row {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar {
+  margin-top: 10px;
+  background: #452b4e;
+  border-radius: 9px;
+  overflow-y: auto;
+  cursor: pointer;
+  height: calc(100vh - 30px);
+  overflow-y: scroll;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+
+  /* Internet Explorer 10+ */
+  &::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
+  }
+
+  text-align: center;
+}
+
+
