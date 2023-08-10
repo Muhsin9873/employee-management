@@ -1,0 +1,18 @@
+.form-wrapp{
+    display: flex;
+    align-items: center;
+}
+
+.select-design-wrap {
+    .select-class {
+      width: 100%;
+      outline: none;
+      background: #ededed;
+      border: none;
+      padding: 12px;
+      font-size: 14px;
+      color: #606266 !important;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+}

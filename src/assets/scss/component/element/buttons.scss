@@ -1,0 +1,111 @@
+.btn {
+  &.qw-button-wd {
+    width: 100%;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+  }
+
+  &.qw-button-right {
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px 24px;
+    border-radius: 4px;
+    float: right;
+    margin-bottom: 20px;
+  }
+
+  &.qw-button-wd-lg {
+    width: 100%;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 16px 40px;
+    border-radius: 10px;
+  }
+
+  &.qw-button-wd-left {
+    width: 100%;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: left;
+    padding: 20px 22px;
+    border-radius: 10px;
+  }
+
+  &.qw-button-md {
+    width: 170px;
+    height: 40px;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.qw-button-lg {
+    height: 40px;
+    width: 205px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+    @extend .custom-align-item-center;
+  }
+
+  &.qw-button-sm {
+    width: 78px;
+    height: 36px;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 7px;
+    @extend .custom-align-item-center;
+  }
+
+  &.qw-button-xsm {
+    width: 85px;
+    height: 28px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 7px;
+    @extend .custom-align-item-center;
+  }
+}
+
+.qw-btn-primary {
+  color: $white;
+  background: $primaryColor;
+  border-color: $primaryColor ;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+}
+.btn-xs {
+  background-color: #f0f9eb;
+  border-color: #e1f3d8;
+  color: #67c23a;
+  display: inline-block;
+  height: 32px;
+  padding: 0 10px;
+  line-height: 30px;
+  font-size: 12px;
+  border: 1px solid #d9ecff;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.custom-align-item-center {
+  align-items: center;
+  justify-content: center;
+}

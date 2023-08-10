@@ -1,0 +1,33 @@
+<div class="main-wrapper">
+  <div class="d-flex">
+    <div>
+      Admin Template
+    </div>
+    <div class="d-flex">
+      <div class="header-link" [class.menu-active]="activeItem == 'home'" (click)="navigateFunction('home')">
+          Home
+      </div>
+      <div class="header-link"  [class.menu-active]="activeItem == 'employee'" (click)="navigateFunction('employee')">
+        Employees
+      </div>
+      <div class="header-link"  [class.menu-active]="activeItem == 'designation'" (click)="navigateFunction('designation')">
+        Designations
+      </div>
+    </div>
+  </div>
+  <div>
+    Welome Muhammed shafi P
+    <div class="dropdown">
+      <div class="dropdown">
+        <div class="merchant-icon">M</div>
+        <div class="dropdown-content">
+          <div class="dropdrown-item">
+            <div class="logout-btn" (click)="logout()">Log Out</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+</div>

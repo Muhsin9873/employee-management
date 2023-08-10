@@ -1,0 +1,132 @@
+<div class="login-header">
+  <div>
+    <h5><b>Employee Manager</b></h5>
+  </div>
+  <div class="login-wrapper">
+    <h6 style="margin-right: 10px" class="loginText" routerLink="/login">Login</h6>
+    <h6 routerLink="/register" class="registerText">Register</h6>
+  </div>
+</div>
+<hr />
+<div class="login-signup-box">
+  <div class="login-container">
+    <div class="header-wrap">
+      <div class="main-header">Register</div>
+    </div>
+    <div>
+      <form [formGroup]="loginForm" (ngSubmit)="register()">
+        <div
+          class="qw-form-group mb-4"
+          [class.qw-input-validation]="
+            loginForm.controls.name.invalid &&
+            !loginForm.controls.name.untouched
+          "
+        >
+          <label class="qw-form-label">Name</label>
+          <input
+            class="form-control qw-form-control-prepend"
+            formControlName="name"
+            required
+          />
+          <small
+            *ngIf="
+              loginForm.controls.name.touched &&
+              loginForm.controls.name.errors?.required
+            "
+            class="validation-text"
+            translate
+          >
+            Enter a valid name.
+          </small>
+        </div>
+        <div
+          class="qw-form-group mb-4"
+          [class.qw-input-validation]="
+            loginForm.controls.email.invalid &&
+            !loginForm.controls.email.untouched
+          "
+        >
+          <label class="qw-form-label">Email Address</label>
+          <input
+            class="form-control qw-form-control-prepend"
+            formControlName="email"
+            required
+          />
+          <small
+            *ngIf="
+              loginForm.controls.email.touched &&
+              loginForm.controls.email.errors?.required
+            "
+            class="validation-text"
+            translate
+          >
+            Enter a valid Email Address.
+          </small>
+        </div>
+        <div
+          class="qw-form-group"
+          [class.qw-input-validation]="
+            loginForm.controls.password.invalid &&
+            !loginForm.controls.password.untouched
+          "
+        >
+          <label for="customerName" class="qw-form-label">Password</label>
+          <input
+            name="password"
+            class="form-control qw-form-control-prepend-last"
+            type="password"
+            formControlName="password"
+            required
+          />
+          <small
+            *ngIf="
+              loginForm.controls.password.invalid &&
+              !loginForm.controls.password.untouched
+            "
+            class="validation-text"
+            translate
+          >
+            Enter a valid password
+          </small>
+        </div>
+        <div
+          class="qw-form-group"
+          [class.qw-input-validation]="
+            loginForm.controls.password.invalid &&
+            !loginForm.controls.password.untouched
+          "
+        >
+          <label for="customerName" class="qw-form-label"
+            >Confirm Password</label
+          >
+          <input
+            name="password"
+            class="form-control qw-form-control-prepend-last"
+            type="password"
+            formControlName="confirmpassword"
+            required
+          />
+          <small
+            *ngIf="
+              loginForm.controls.confirmpassword.invalid &&
+              !loginForm.controls.confirmpassword.untouched
+            "
+            class="validation-text"
+            translate
+          >
+            Enter a valid password
+          </small>
+        </div>
+        <div class="lg-button-wrapper mt-4">
+          <button
+            class="btn qw-button-wd qw-btn-primary"
+            type="submit"
+            [disabled]="loginForm.invalid"
+          >
+            <span translate>Register</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

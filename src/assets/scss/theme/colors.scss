@@ -1,0 +1,70 @@
+//---------- BASE  ------------//
+
+$primaryColor: #fa6c26;
+
+//---------- GREY SHADES  ------------//
+
+$labelColor: #b0b0b0;
+$inputborderColor: #b0b0b0;
+$subTitle: #737373;
+$borderColor: #d6d6d6;
+
+//---------- BACKGROUND  ------------//
+$bgColor: #472b4d;
+
+//---------- VALIDATION ------------//
+$validationError: #f93333;
+
+//---------- GRADIENTS ------------//
+
+$gradientStartPrimary: #10305e;
+$gradientEndPrimary: #000000;
+
+$gradientStartSecondary: #4c4c4c;
+$gradientEndSecondary: #131313;
+
+%gradient-primary {
+  @include gradient-horizontal($startColor: $gradientStartPrimary, $endColor: $gradientEndPrimary);
+}
+
+%gradient-secondary {
+  @include gradient-horizontal($startColor: $gradientStartSecondary, $endColor: $gradientEndSecondary);
+}
+
+//---------- ALERTS ------------//
+
+$infoBg: #e9fcff;
+$infoText: #1d709e;
+
+$warningBg: #fffaeb;
+$warningText: #9b741e;
+
+$successBg: #f5ffeb;
+$successText: #589b1e;
+
+$dangerBg: #ffebeb;
+$dangerText: #9b1e1e;
+
+//---------- BLACK AND WHITE ------------//
+
+$white: #fff;
+$whiteTransparent10: rgba(255, 255, 255, 0.1);
+$whiteTransparent20: rgba(255, 255, 255, 0.2);
+$whiteTransparent30: rgba(255, 255, 255, 0.3);
+$whiteTransparent40: rgba(255, 255, 255, 0.4);
+$whiteTransparent50: rgba(255, 255, 255, 0.5);
+$whiteTransparent60: rgba(255, 255, 255, 0.6);
+$whiteTransparent70: rgba(255, 255, 255, 0.7);
+$whiteTransparent80: rgba(255, 255, 255, 0.8);
+$whiteTransparent90: rgba(255, 255, 255, 0.9);
+
+$black: #000;
+$blackTransparent10: rgba(0, 0, 0, 0.1);
+$blackTransparent20: rgba(0, 0, 0, 0.2);
+$blackTransparent30: rgba(0, 0, 0, 0.3);
+$blackTransparent40: rgba(0, 0, 0, 0.4);
+$blackTransparent50: rgba(0, 0, 0, 0.5);
+$blackTransparent60: rgba(0, 0, 0, 0.6);
+$blackTransparent70: rgba(0, 0, 0, 0.7);
+$blackTransparent80: rgba(0, 0, 0, 0.8);
+$blackTransparent90: rgba(0, 0, 0, 0.9);

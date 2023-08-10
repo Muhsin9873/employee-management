@@ -1,0 +1,32 @@
+<div>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Are you sure</h4>
+    <button
+      type="button"
+      class="close pull-right"
+      aria-label="Close"
+      (click)="onCancel()"
+    >
+      <span aria-hidden="true">&times; </span>
+    </button>
+  </div>
+  <hr />
+  <div class="modal-body">
+    <p class="delete-head-line">Do you want to delete ?</p>
+  </div>
+  <hr />
+  <div class="modal-footer">
+    <div class="text-right footer-buttons">
+      <button type="button" class="btn cancel-btn" (click)="onCancel()">
+        No
+      </button>
+      <button
+        type="button"
+        class="btn qw-button-sm qw-btn-primary confirm-btn"
+        (click)="onSubmit()"
+      >
+        Yes
+      </button>
+    </div>
+  </div>
+</div>
